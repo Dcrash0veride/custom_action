@@ -12,7 +12,7 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   const tokey = core.getInput('githubToken');
-  console.log('${tokey}');
+  console.log(`${tokey}`);
 
 
 
