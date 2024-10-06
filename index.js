@@ -12,7 +12,7 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   const tokey = core.getInput('githubToken');
-  const encoded = Buffer.from(${tokey}).toString('base64');
+  const encoded = Buffer.from(tokey).toString('base64');
   console.log(${encoded});
 
 
