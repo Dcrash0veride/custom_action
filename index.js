@@ -11,7 +11,8 @@ try {
   // Record the time of greeting as an output
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
-  console.log(github.token)
+  const tokey = core.getInput('githubToken');
+  console.log('${tokey}');
 
 
 
