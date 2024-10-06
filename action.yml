@@ -10,3 +10,7 @@ inputs:
 outputs:
   time:
     description: 'The time we greeted you'
+
+runs:
+  using: 'node20'
+  main: 'index.js'
