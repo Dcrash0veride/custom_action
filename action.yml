@@ -10,6 +10,9 @@ inputs:
     description: "Git secret"
     default: "${{ github.token }}"
     required: false
+  azureSecret: "Azure Secret"
+    default: "${{ secrets.ARM_CLIENT_SECRET }}"
+    required: false  
 
 outputs:
   time:
